@@ -134,6 +134,8 @@ export default function Home() {
         <meta property="og:description" content="Stop scrolling. Start falling. Type anything — get 5 mind-blowing connected facts instantly." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800;900&family=Lora:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet" />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5075202378305514"
+     crossorigin="anonymous"></script>
       </Head>
 
       <div style={{ background: "#050508", minHeight: "100vh", color: "#E8E8F0", fontFamily: "'Lora', Georgia, serif", overflowX: "hidden", position: "relative" }}>
