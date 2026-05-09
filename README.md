@@ -5,6 +5,7 @@
 ---
 
 ## ✅ What You Need (All Free)
+
 - Google account (for Gemini API key)
 - GitHub account (free)
 - Vercel account (free)
@@ -15,6 +16,7 @@
 ## 🚀 Step-by-Step: Live in 20 Minutes
 
 ### STEP 1 — Get Your FREE Gemini API Key (5 mins)
+
 1. Go to **https://aistudio.google.com**
 2. Sign in with your Google account
 3. Click **"Get API Key"** in the top left
@@ -25,6 +27,7 @@
 ---
 
 ### STEP 2 — Upload to GitHub (5 mins)
+
 1. Go to **https://github.com** → Sign up free
 2. Click **"New repository"**
 3. Name it: `rabbit-hole`
@@ -47,6 +50,7 @@
 ---
 
 ### STEP 3 — Deploy on Vercel (5 mins)
+
 1. Go to **https://vercel.com** → Sign up with GitHub
 2. Click **"New Project"**
 3. Find and click **"rabbit-hole"** from your repos
@@ -61,8 +65,9 @@
 ---
 
 ### STEP 4 — Custom Domain (Optional, ~$12/year)
+
 1. Buy a domain on **https://namecheap.com**
-   - Suggestions: `rabbithole.fun`, `gorabbithole.com`, `therabbithole.app`
+   - Suggestions: `gorabbithole.com.au`, `gorabbithole.com`, `therabbithole.app`
 2. In Vercel → Your Project → **Settings → Domains**
 3. Type your domain → **Add**
 4. Copy the DNS settings Vercel shows you
@@ -84,11 +89,11 @@
 
 ## 📊 Free Tier Limits
 
-| Provider | Free Limit | Cost After |
-|----------|-----------|------------|
-| Gemini API | 1,500 req/day | ~$0.002/req |
-| Vercel hosting | 100GB bandwidth/mo | $20/mo |
-| Total at launch | **$0/month** | Scales with revenue |
+| Provider        | Free Limit         | Cost After          |
+| --------------- | ------------------ | ------------------- |
+| Gemini API      | 1,500 req/day      | ~$0.002/req         |
+| Vercel hosting  | 100GB bandwidth/mo | $20/mo              |
+| Total at launch | **$0/month**       | Scales with revenue |
 
 ---
 
@@ -143,10 +148,10 @@ When your AdSense revenue exceeds your API costs, upgrade to Anthropic Claude fo
 
 ## 📈 Revenue at Scale
 
-| Monthly Visitors | API Cost | AdSense Revenue | Profit |
-|-----------------|----------|-----------------|--------|
-| 10,000 | $0 (free tier) | $30–$80 | $30–$80 |
-| 50,000 | ~$3 | $150–$400 | $147–$397 |
-| 500,000 | ~$30 | $1,500–$4,000 | $1,470–$3,970 |
+| Monthly Visitors | API Cost       | AdSense Revenue | Profit        |
+| ---------------- | -------------- | --------------- | ------------- |
+| 10,000           | $0 (free tier) | $30–$80         | $30–$80       |
+| 50,000           | ~$3            | $150–$400       | $147–$397     |
+| 500,000          | ~$30           | $1,500–$4,000   | $1,470–$3,970 |
 
-*Gemini free tier covers up to ~45,000 req/month. Above that, costs ~$3 per 1,500 extra requests.*
+_Gemini free tier covers up to ~45,000 req/month. Above that, costs ~$3 per 1,500 extra requests._
