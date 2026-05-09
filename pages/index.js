@@ -1041,16 +1041,35 @@ export default function Home() {
                 </div>
 
                 {/* Streak */}
-                <div
+                <button
+                  onClick={() => fall(result.topic)}
+                  disabled={fallsLeft <= 0}
                   style={{
+                    width: "100%",
+                    padding: "14px 20px",
+                    borderRadius: 14,
+                    border: "1.5px solid rgba(255,209,102,.25)",
+                    background:
+                      fallsLeft <= 0
+                        ? "rgba(255,255,255,.03)"
+                        : "rgba(255,209,102,.06)",
+                    cursor: fallsLeft <= 0 ? "not-allowed" : "pointer",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
                     gap: 12,
-                    padding: "12px 20px",
-                    background: "rgba(255,209,102,.06)",
-                    border: "1px solid rgba(255,209,102,.14)",
-                    borderRadius: 14,
+                    transition: "all .2s",
+                  }}
+                  onMouseOver={(e) => {
+                    if (fallsLeft > 0)
+                      e.currentTarget.style.background =
+                        "rgba(255,209,102,.12)";
+                  }}
+                  onMouseOut={(e) => {
+                    e.currentTarget.style.background =
+                      fallsLeft <= 0
+                        ? "rgba(255,255,255,.03)"
+                        : "rgba(255,209,102,.06)";
                   }}
                 >
                   <span className="fire" style={{ fontSize: 20 }}>
@@ -1064,7 +1083,9 @@ export default function Home() {
                       color: "#FFD166",
                     }}
                   >
-                    Rabbit hole #{count}
+                    {fallsLeft <= 0
+                      ? "No falls left today"
+                      : `Fall Deeper → Rabbit hole #${count + 1}`}
                   </span>
                   <span
                     style={{
@@ -1074,15 +1095,17 @@ export default function Home() {
                     }}
                   >
                     —{" "}
-                    {count >= 5
-                      ? "officially obsessed 🕳️"
-                      : count >= 3
-                        ? "can't stop, can you?"
-                        : count >= 2
-                          ? "still falling…"
-                          : "keep going"}
+                    {fallsLeft <= 0
+                      ? "come back tomorrow 🕳️"
+                      : count >= 5
+                        ? "officially obsessed 🕳️"
+                        : count >= 3
+                          ? "can't stop, can you?"
+                          : count >= 2
+                            ? "still falling…"
+                            : "keep going"}
                   </span>
-                </div>
+                </button>
               </div>
             </div>
           )}
