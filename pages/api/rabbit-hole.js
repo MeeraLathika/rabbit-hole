@@ -55,7 +55,7 @@ Rules: All facts TRUE. Specific names, numbers, dates. Write like texting your m
   try {
     // FREE Gemini API call
     const response = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`,
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`,
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -64,6 +64,7 @@ Rules: All facts TRUE. Specific names, numbers, dates. Write like texting your m
           generationConfig: {
             temperature: 0.9,
             maxOutputTokens: 1200,
+            thinkingConfig: { thinkingBudget: 0 },
           }
         })
       }
